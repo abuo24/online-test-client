@@ -1,0 +1,86 @@
+.droper{
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(236, 233, 233, 0.8) !important;
+    padding: 40px 30px;
+    border-radius: 8px;
+    /* box-shadow: 0 0 8px rgb(163, 163, 163); */
+}
+.back_login{
+    background-image: url(../../imgs/login.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    /* filter: blur(2px); */
+}
+.marginTop{
+    padding-top: 100px;
+}
+.onlogin{
+    background-color: rgba(166, 166, 255, 0.5) !important;
+    width: 100%;
+    height: 100vh;
+}
+
+.danger-message{
+    color:red;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+.inline-block{
+    display: inline-block;
+}
+.ant-input{
+    background-color: #fff !important;
+    height: 40px;
+    padding: 0 !important;
+    border-radius: 5px;
+}
+.ant-input:hover{
+    border-color: #838383;
+}
+element.style {
+    padding: 0 !important;
+}
+.ant-input-affix-wrapper:not(.ant-input-affix-wrapper-disabled):hover {
+    border-color: #838383;
+    outline: none !important;
+    border-right-width: 1px !important;
+    background-color: #fff !important;
+    z-index: 1;
+}
+.ant-input-affix-wrapper{
+    padding: 0 5px 0 0 !important;
+}
+.sign_button{
+    height:35px;
+    width: 150px;
+    background-color: rgb(117, 117, 117) !important;
+    border: none;
+    outline: none;
+    transition: 0.1s;
+}
+.sign_button:hover{
+    background-color: rgb(153, 153, 153) !important;
+}
+.ant-checkbox-checked .ant-checkbox-inner {
+    background-color: rgb(117, 117, 117);
+    border-color: rgb(117, 117, 117);
+    color: #000;
+}
+.ant-checkbox-wrapper:hover .ant-checkbox-inner, .ant-checkbox:hover .ant-checkbox-inner, .ant-checkbox-input:focus + .ant-checkbox-inner {
+    border-color: rgb(117, 117, 117);
+}
+@media only screen and (max-width:765px){
+    .droper{
+        width: 350px;
+    } 
+    .back_login{
+        background-image: url(../../imgs/mobileLogin.jpg);
+    }
+}

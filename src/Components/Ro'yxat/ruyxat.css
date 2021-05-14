@@ -1,0 +1,56 @@
+.sign{
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.ruyxat{
+    width: 100%;
+    box-shadow: #e2e2e2 0px 0px 8px;
+}
+.form-tex{
+    width: 90%;
+    margin: 0 auto;
+}
+@media only screen and (max-width:900px){
+    .sign{
+        width: 95%;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+}
+.inputRoyxta{
+    display: block;
+    width: 100% !important;
+    height: 45px !important;
+    padding: 0px 8px !important;
+    border: solid 0.56px #999 !important;
+    border-radius: 5px !important;
+}
+.inputRoyxta:focus-visible{
+    outline: none;
+}
+.form_label{
+    height: 30px;
+}
+.ant-form-item-label{
+    font-weight: 700;
+    color: #333 !important;
+    margin-top: 5px;
+}
+.success_btn{
+    border: cornflowerblue !important;
+    outline: none !important;
+    background-color: cornflowerblue !important;
+    color: white !important;
+    height: 45px !important;
+    padding: 5px 10px !important;
+    font-size: 20px !important;
+    margin: 15px 10px 0 0 !important;
+    border-radius: 5px !important;
+}
+.success_btn:active{
+    background-color: rgb(67, 130, 247);
+}
+.hover_btn:hover{
+    background-color: rgb(82, 133, 228);
+}
