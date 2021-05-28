@@ -133,15 +133,23 @@ class TestSelect extends Component {
             if (res.status===400) {
                 localStorage.setItem("s1",this.state.parentId)
                 localStorage.setItem("s2",this.state.firstId)
-                localStorage.setItem("s3",this.state.secondParent[0].id)
+                localStorage.setItem("s3",this.state.secondId)
                 localStorage.setItem("proc", "false")
+                window.location.href = "/testing"
+            } else if(res.status === 200 && !res.data.succes) {
+
+                localStorage.setItem("s1",this.state.parentId)
+                localStorage.setItem("s2",this.state.firstId)
+                localStorage.setItem("s3",this.state.secondId)
+                localStorage.getItem("proc", "false")
+                window.location.href = "/testing"
             } else {
                 localStorage.getItem("proc", "true")
             };
         }).catch(err=>{
             localStorage.setItem("s1",this.state.parentId)
             localStorage.setItem("s2",this.state.firstId)
-            localStorage.setItem("s3",this.state.secondParent[0].id)
+            localStorage.setItem("s3",this.state.secondId)
             localStorage.setItem("proc","false");
             window.location.href = "/testing"});
         // var data={
